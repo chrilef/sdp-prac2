@@ -5,6 +5,28 @@ package sdp.prac2;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import java.util.Arrays;
 
 class AppTest {
+    @Test void task5no1() {
+        //Arrange
+        SimpleFunctions functions = new SimpleFunctions();
+        List<Integer> a= Arrays.asList(4,7,2);
+        List<Interger> expected = Arrays.asList(2,4,7);
+        //act
+        List<Integer> result = functions.Task5(a);
+        //assert
+        assertIterableEquals(expected, result);
+    }
+
+    @Test void task5no2() {
+        //Arrange
+        SimpleFunctions functions = new SimpleFunctions();
+        List<Integer> a= Arrays.asList(11,21,23);
+        List<Interger> expected = Arrays.asList(11,21,23);
+        //act
+        List<Integer> result = functions.Task5(a);
+        //assert
+        assertIterableEquals(expected, result);
+    }
 }
