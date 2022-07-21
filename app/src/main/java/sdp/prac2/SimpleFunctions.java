@@ -4,32 +4,22 @@ import java.util.*;
 
 public class SimpleFunctions {
     public SimpleFunctions() {
-    public static int Task1 (ArrayList<Integer> a, ArrayList<Integer> b ){
-        for (int i = 0 ; i<a.size();i++){
-              if (i>=b.size()){
-                  return a;
-              }
-               a+=b[i];
-        }
-    }
-    return a; 
-    }
-            }
-    public boolean Task3(String str) {
-            if(str.length() == 0)
-                return true;
-                int count = 0;
-            for(int j =0; j < str.length(); j++) {
-                if(str.charAt(j) == '(') {
-                    count += 1;
-                }
-                else if(str.charAt(j) == ')') {
-                    count -= 1;
-                    if(count < 0)
-                        return false;
-                }
-            }
-            return count == 0 ? true : false;
-        }
 
+   public static int Task1 (List<Integer> a, List<Integer> b ){
+        int ans=0; 
+        for (int i = 0 ; i<b.size();i++){
+              if(b.get(i)>a.size() || (b.get(i)<0)){
+                i+=1;
+              }
+              else{
+              ans+=a.get(b.get(i));
+              }
+
+        }
+        return ans;
 }
+    }
+    }
+  
+
+
