@@ -3,7 +3,9 @@ package sdp.prac2;
 import java.util.*;
 
 public class SimpleFunctions {
-    public List<Integer> Task4 (List<Integer> a, List<Integer> b) {
+
+
+    public static List<Integer> Task4 (List<Integer> a, List<Integer> b) {
         int sizea = a.size()-1;
         int sizeb = a.size()-1;
         
@@ -23,8 +25,6 @@ public class SimpleFunctions {
         }
 
 
-    public SimpleFunctions() {
-            }
     public boolean Task3(String str) {
             if(str.length() == 0)
                 return true;
