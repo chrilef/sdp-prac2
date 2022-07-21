@@ -3,7 +3,7 @@ package sdp.prac2;
 import java.util.*;
 
 public class SimpleFunctions {
-<<<<<<< HEAD
+
     public SimpleFunctions() {
     }
 
@@ -18,9 +18,8 @@ public class SimpleFunctions {
         }
     }
 
-=======
-<<<<<<< HEAD
-    public SimpleFunctions() {}
+
+
     public static List<Integer> Task4 (List<Integer> a, List<Integer> b) {
         int sizea = a.size()-1;
         int sizeb = a.size()-1;
@@ -41,9 +40,7 @@ public class SimpleFunctions {
         }
 
 
-=======
-    public SimpleFunctions() {
-            }
+
     public boolean Task3(String str) {
             if(str.length() == 0)
                 return true;
@@ -61,6 +58,4 @@ public class SimpleFunctions {
             return count == 0 ? true : false;
         }
 
->>>>>>> c3d3dacd334a5a47c3e6307e5443d2b70547860f
->>>>>>> 2ae4cf2f07ce2b3b78acecf21ab7fcf24699a0ac
 }
