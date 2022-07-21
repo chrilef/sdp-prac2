@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.Arrays;
 
 class AppTest {
+<<<<<<< HEAD
     @Test void task5no1() {
         //Arrange
         SimpleFunctions functions = new SimpleFunctions();
@@ -29,4 +30,18 @@ class AppTest {
         //assert
         assertIterableEquals(expected, result);
     }
+=======
+  @Test void testTask3() {
+    //Arrange
+    SimpleFunctions classBeingTested = new SimpleFunctions();
+    String str = "((())";
+    boolean expected = false;
+
+    //Act
+    boolean result = classBeingTested.Task3(str);
+    
+    //Asset
+    assertEquals(expected, result);
+  }
+>>>>>>> c3d3dacd334a5a47c3e6307e5443d2b70547860f
 }
