@@ -3,9 +3,16 @@
  */
 package sdp.prac2;
 import sdp.prac2.SimpleFunctions;
+import java.util.*;  
 
 public class App {
     public static void main(String[] args) {
         SimpleFunctions funcs = new SimpleFunctions();
+        List<Integer> in = new ArrayList<Integer>();
+        in.add(2);
+        in.add(3);
+        in.add(100);
+        in.add(101);
+        in = funcs.Task6(in);
     }
 }
