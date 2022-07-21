@@ -6,8 +6,6 @@ public class SimpleFunctions {
 
     public SimpleFunctions() {
     }
-
-
     public List<Integer> Task6(List<Integer> in) {
         List<Integer> out = new ArrayList<Integer>();
         double temp = 0;
@@ -28,3 +26,4 @@ public class SimpleFunctions {
         return out; 
     }
 }
+    
