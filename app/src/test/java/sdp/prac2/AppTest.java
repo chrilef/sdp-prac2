@@ -5,10 +5,55 @@ package sdp.prac2;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import java.util.Arrays;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 class AppTest {
-<<<<<<< HEAD
+
+    @Test void Task6Test(){
+        SimpleFunctions tested = new SimpleFunctions();
+
+        List<Integer> in = new ArrayList<Integer>();
+        in.add(2);
+        in.add(3);
+        in.add(100);
+        in.add(101);
+        List<Integer> exp = new ArrayList<Integer>();
+        exp.add(100);
+        exp.add(100);
+        exp.add(100);
+        exp.add(200);
+        List<Integer> out = tested.Task6(in);
+        boolean test = true;
+        for(int i = 0; i<out.size();i++){
+            if(out.get(i)!=exp.get(i)){
+                test = false;
+            }
+        }
+        assert(test);
+    }
+
+    @Test void Task1Test(){
+        SimpleFunctions tested = new SimpleFunctions();
+
+        List<Integer> a = new ArrayList<Integer>();
+        a.add(2);
+        a.add(3);
+        a.add(1);
+        a.add(0);
+
+        List<Integer> b = new ArrayList<Integer>();
+        b.add(2);
+        b.add(3);
+        b.add(1);
+        b.add(4);
+
+        int result = tested.Task1(a,b);
+        assert(result==4);
+    }
     @Test void task5no1() {
         //Arrange
         SimpleFunctions functions = new SimpleFunctions();
@@ -43,5 +88,4 @@ class AppTest {
     //Asset
     assertEquals(expected, result);
   }
->>>>>>> c3d3dacd334a5a47c3e6307e5443d2b70547860f
 }
