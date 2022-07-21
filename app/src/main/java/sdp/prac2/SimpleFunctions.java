@@ -3,39 +3,16 @@ package sdp.prac2;
 import java.util.*;
 
 public class SimpleFunctions {
-<<<<<<< HEAD
-    public SimpleFunctions() {}
-    public static List<Integer> Task4 (List<Integer> a, List<Integer> b) {
-        int sizea = a.size()-1;
-        int sizeb = a.size()-1;
-        
-        if(sizea!=sizeb)
-        {
-            return null;
-        }
-        else
-        {
-           List<Integer> c = new ArrayList<Integer>();
-                for(int i = 0; i <= sizea; i++){
-                  c.add(a.get(i)*b.get(sizeb));
-                  sizeb--;
-                }
-            return c;
-        }
-        }
-
-
-=======
     public SimpleFunctions() {
     public static int Task1 (ArrayList<Integer> a, ArrayList<Integer> b ){
         for (int i = 0 ; i<a.size();i++){
               if (i>=b.size()){
-                  return ans;
+                  return a;
               }
                a+=b[i];
         }
     }
-    return ans; 
+    return a; 
     }
             }
     public boolean Task3(String str) {
@@ -55,5 +32,4 @@ public class SimpleFunctions {
             return count == 0 ? true : false;
         }
 
->>>>>>> c3d3dacd334a5a47c3e6307e5443d2b70547860f
 }
