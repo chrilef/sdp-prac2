@@ -7,4 +7,16 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
+  @Test void testTask3() {
+    //Arrange
+    SimpleFunctions classBeingTested = new SimpleFunctions();
+    String str = "((())";
+    boolean expected = false;
+
+    //Act
+    boolean result = classBeingTested.Task3(str);
+    
+    //Asset
+    assertEquals(expected, result);
+  }
 }
