@@ -19,4 +19,19 @@ class AppTest {
     //Asset
     assertEquals(expected, result);
   }
+  @Test void testTask4 {
+    //Arrange
+    SimpleFunctions classBeingTested = new SimpleFunctions();
+    List<Integer> list1 = new ArrayList<>(1, 4, 5);
+    List<Integer> list2 = new ArrayList<>(2, 3, 10);
+    List<Integer> expected = new ArrayList<>(10, 12, 10);
+    
+    //Act
+    List<Integer> result = new ArrayList<>();
+    result = classBeingTested.Task4(list1,list2);
+
+    //Asset
+    
+        assertIterableEquals(expected, result);
+  }
 }
