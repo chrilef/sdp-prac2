@@ -18,6 +18,8 @@ public class SimpleFunctions {
         }
         return ans;
    }
+
+
     public static List<Integer> Task4 (List<Integer> a, List<Integer> b) {
         int sizea = a.size()-1;
         int sizeb = a.size()-1;
