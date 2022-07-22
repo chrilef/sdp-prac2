@@ -8,8 +8,8 @@ public class SimpleFunctions {
 
    public static int Task1 (List<Integer> a, List<Integer> b ){
         int ans=0; 
-        for (int i = 0 ; i<b.size();i++){
-              if(b.get(i)>a.size() || (b.get(i)<0)){
+        for (int i = 0 ; i<=b.size();i++){
+              if(b.get(i)>a.size()-1 || (b.get(i)<0)){
                 i+=1;
               }
               else{
