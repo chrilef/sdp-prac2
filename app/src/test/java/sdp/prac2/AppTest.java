@@ -123,3 +123,17 @@ class AppTest {
   }
     
 }
+@Test void task2no2(){
+    //arrange
+     SimpleFunctions functions = new SimpleFunctions();
+     List<String> arr1=  new ArrayList<>();
+     arr1.add(null);
+     arr1.add("dog");
+     List<String> expected = new ArrayList<>();
+     expected.add("og");
+     //act
+     List<String> result = functions.Task2(arr1);
+     //assert
+     assertIterableEquals(expected,result);
+}
+}
