@@ -122,7 +122,7 @@ class AppTest {
         assertIterableEquals(expected, null);
   }
     
-}
+
 @Test void task2no2(){
     //arrange
      SimpleFunctions functions = new SimpleFunctions();
@@ -136,4 +136,45 @@ class AppTest {
      //assert
      assertIterableEquals(expected,result);
 }
+@Test void Task6Test(){
+        SimpleFunctions tested = new SimpleFunctions();
+
+        List<Integer> in = new ArrayList<Integer>();
+        in.add(2);
+        in.add(3);
+        in.add(100);
+        in.add(101);
+        List<Integer> exp = new ArrayList<Integer>();
+        exp.add(100);
+        exp.add(100);
+        exp.add(100);
+        exp.add(200);
+        List<Integer> out = tested.Task6(in);
+        boolean test = true;
+        for(int i = 0; i<out.size();i++){
+            if(out.get(i)!=exp.get(i)){
+                test = false;
+            }
+        }
+        assert(test);
+    }
+
+    @Test void Task1Test(){
+        SimpleFunctions tested = new SimpleFunctions();
+
+        List<Integer> a = new ArrayList<Integer>();
+        a.add(2);
+        a.add(3);
+        a.add(1);
+        a.add(0);
+
+        List<Integer> b = new ArrayList<Integer>();
+        b.add(2);
+        b.add(3);
+        b.add(1);
+        b.add(4);
+
+        int result = tested.Task1(a,b);
+        assert(result==4);
+    }
 }
